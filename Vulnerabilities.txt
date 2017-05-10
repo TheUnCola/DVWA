@@ -1,0 +1,13 @@
+1. md5 is shit
+2. username/password attempts not limited so you could run a dictionary attack
+3. using mysqli instead of PDO (multiple queries at once allowed currently)
+4. no delay after login attempts
+5. difficulty level is saved as a cookie (can be reset by end user)
+6. The timeout period is set in the javascript of the homepage. even on hard difficulty, this timeout period can be changed
+7. HTTP (if not running in cloud9)
+8. Command Line Injection (anything that calls the command line to get info we can inject)
+9. File Upload Feature (can upload a script file and do whatever the hell you want (execute the file with command line injection))
+10. Sudo Access on Command Line Injection (can execute anything at sudo level (can cat passwd file))
+11. The image displayed in /DVWA/vulnerabilities/brute is sent over an HTTP connection, not HTTPS
+12. SQL Injection (can get any info from the mysql server (or update,delete,insert,drop,etc))
+13. PHPIDs disabled (PHPIDS works by filtering any user supplied input against a blacklist of potentially malicious code)
